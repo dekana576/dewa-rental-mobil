@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\BrandController as AdminBrandController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +23,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [admindashboardcontroller::class, 'index'])->name('dashboard');
+    Route::resource('brands', AdminBrandController::class);
 });
