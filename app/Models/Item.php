@@ -22,8 +22,20 @@ class Item extends Model
         'review',
     ];
 
+    protected $cast = [
+        'photos' => 'array',
+    ];
+
     public function brand()
     {
         return $this->belongsTo(Brand::class);
+    }
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
     }
 }
