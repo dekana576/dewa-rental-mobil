@@ -62,10 +62,10 @@ class BrandController extends Controller
     public function store(BrandRequest $request)
     {
         $data = $request->all();
-    $data['slug'] = Str::slug($data['name']) . '-' . Str::lower(Str::random(5));
+        $data['slug'] = Str::slug($data['name']) . '-' . Str::lower(Str::random(5));
 
 
-    Brand::create($data);
+        Brand::create($data);
 
     return redirect()->route('admin.brands.index')->with('success', 'Brand berhasil ditambahkan');
     }
@@ -101,9 +101,14 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BrandRequest $request, Brand $brand)
     {
-        //
+        $data = $request->all();
+    $data['slug'] = Str::slug($data['name']) . '-' . Str::lower(Str::random(5));
+
+    $brand->update($data);
+
+    return redirect()->route('admin.brands.index');
     }
 
     /**
@@ -112,8 +117,10 @@ class BrandController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+
+        return redirect()->route('admin.brands.index');
     }
 }
