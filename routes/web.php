@@ -16,12 +16,13 @@ use App\Http\Controllers\Admin\BrandController as AdminBrandController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('front.index');
 
-Route::middleware([
+Route::prefix('admin')->name('admin.')->middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'
+    'verified',
+    'admin'
 ])->group(function () {
     Route::get('/dashboard', [admindashboardcontroller::class, 'index'])->name('dashboard');
     Route::resource('brands', AdminBrandController::class);
