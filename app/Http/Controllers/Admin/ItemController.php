@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Item;
+use App\Models\Brand;
+use App\Models\Type;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 use App\Http\Controllers\Controller;
@@ -48,7 +50,10 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        $brands = Brand::all();
+        $types = Type::all();
+
+        return view('admin.items.create', compact('brands', 'types'));
     }
 
     /**
