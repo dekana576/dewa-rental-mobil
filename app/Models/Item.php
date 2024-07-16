@@ -26,6 +26,16 @@ class Item extends Model
         'photos' => 'array',
     ];
 
+    public function getThumbnailAttribute()
+    {
+        // If photos exist
+        if ($this->photos) {
+            return Storage::url(json_decode($this->photos)[0]);
+        }
+
+        return 'https://via.placeholder.com/800x600';
+    }
+    
     public function brand()
     {
         return $this->belongsTo(Brand::class);

@@ -28,7 +28,7 @@
         </div>
       </div>
     @endif
-        <form class="w-full" action="{{ route('admin.items.store') }}" method="post" encitem="multipart/form-data">
+        <form class="w-full" action="{{ route('admin.items.store') }}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="flex flex-wrap px-3 mt-4 mb-6 -mx-3">
             <div class="w-full">
@@ -153,7 +153,7 @@
 
       <div class="flex flex-wrap mb-6 -mx-3">
         <div class="w-full px-3 text-right">
-          <button item="submit"
+          <button type="submit"
             class="px-4 py-2 font-bold text-white bg-green-500 rounded shadow-lg hover:bg-green-700">
             Simpan Item
           </button>

@@ -24,6 +24,12 @@
             name: 'id',
           },
           {
+            data: 'thumbnail',
+            name: 'thumbnail',
+            orderable: false,
+            searchable: false,
+          },
+          {
             data: 'name',
             name: 'name'
           },
@@ -62,6 +68,7 @@
               <tr>
                 <th style="max-width: 1%">ID</th>
                 <th>Nama</th>
+                <th>Thumbnail</th>
                 <th>Type</th>
                 <th>Brand</th>
                 <th style="max-width: 1%">Aksi</th>
