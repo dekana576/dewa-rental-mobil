@@ -111,9 +111,18 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Item $item)
     {
-        //
+        $item->load('brand', 'type');
+
+        $brands = Brand::all();
+        $types = Type::all();
+
+        return view('admin.items.edit', [
+            'item' => $item,
+            'brands' => $brands,
+            'types' => $types
+        ]);
     }
 
     /**
@@ -123,9 +132,30 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ItemRequest $request, Item $item)
     {
-        //
+        $data = $request->all();
+
+        // If photos is not empty, then upload new photos
+        if ($request->hasFile('photos')) {
+            $photos = [];
+
+            foreach ($request->file('photos') as $photo) {
+                $photoPath = $photo->store('assets/item', 'public');
+
+                // Store as json
+                array_push($photos, $photoPath);
+            }
+
+            $data['photos'] = json_encode($photos);
+        } else {
+            // If photos is empty, then use old photos
+            $data['photos'] = $item->photos;
+        }
+
+        $item->update($data);
+
+        return redirect()->route('admin.items.index');
     }
 
     /**
@@ -134,8 +164,10 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Item $item)
     {
-        //
+        $item->delete();
+
+        return redirect()->route('admin.items.index');
     }
 }
