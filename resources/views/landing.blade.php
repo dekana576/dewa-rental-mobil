@@ -14,7 +14,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="../assets/images/porsche.webp" class="w-full max-w-[963px] z-10 relative" alt=""
+                <img src="/images/porsche.webp" class="w-full max-w-[963px] z-10 relative" alt=""
                     data-aos="zoom-in" data-aos-delay="950">
             </div>
 
@@ -67,7 +67,7 @@
                         <p>
                             Rent Now
                         </p>
-                        <img src="../assets/svgs/ic-arrow-right.svg" alt="">
+                        <img src="/svgs/ic-arrow-right.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                         <p class="text-sm font-normal text-secondary">Electric Car</p>
                         <a href="./details.html" class="absolute inset-0"></a>
                     </div>
-                    <img src="../assets/images/car-01.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
+                    <img src="/images/car-01.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
                         alt="">
                     <div class="flex items-center justify-between gap-1">
                         <!-- Price -->
@@ -105,7 +105,7 @@
                         <!-- Rating -->
                         <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
                             (4.8/5)
-                            <img src="../assets/svgs/ic-star.svg" alt="">
+                            <img src="/svgs/ic-star.svg" alt="">
                         </p>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                         <p class="text-sm font-normal text-secondary">Sport Car</p>
                         <a href="./details.html" class="absolute inset-0"></a>
                     </div>
-                    <img src="../assets/images/car-02.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
+                    <img src="/images/car-02.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
                         alt="">
                     <div class="flex items-center justify-between gap-1">
                         <!-- Price -->
@@ -128,7 +128,7 @@
                         <!-- Rating -->
                         <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
                             (5/5)
-                            <img src="../assets/svgs/ic-star.svg" alt="">
+                            <img src="/svgs/ic-star.svg" alt="">
                         </p>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                         <p class="text-sm font-normal text-secondary">Family Car</p>
                         <a href="./details.html" class="absolute inset-0"></a>
                     </div>
-                    <img src="../assets/images/car-03.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
+                    <img src="/images/car-03.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
                         alt="">
                     <div class="flex items-center justify-between gap-1">
                         <!-- Price -->
@@ -151,7 +151,7 @@
                         <!-- Rating -->
                         <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
                             (4.3/5)
-                            <img src="../assets/svgs/ic-star.svg" alt="">
+                            <img src="/svgs/ic-star.svg" alt="">
                         </p>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                         <p class="text-sm font-normal text-secondary">Race Car</p>
                         <a href="./details.html" class="absolute inset-0"></a>
                     </div>
-                    <img src="../assets/images/car-04.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
+                    <img src="/images/car-04.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
                         alt="">
                     <div class="flex items-center justify-between gap-1">
                         <!-- Price -->
@@ -174,7 +174,7 @@
                         <!-- Rating -->
                         <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
                             (4.9/5)
-                            <img src="../assets/svgs/ic-star.svg" alt="">
+                            <img src="/svgs/ic-star.svg" alt="">
                         </p>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
     <!-- Extra Benefits -->
     <section class="container relative pt-[100px]">
         <div class="flex items-center flex-col md:flex-row flex-wrap justify-center gap-8 lg:gap-[120px]">
-            <img src="../assets/images/illustration-01.webp" class="w-full lg:max-w-[536px]" alt="">
+            <img src="/images/illustration-01.webp" class="w-full lg:max-w-[536px]" alt="">
             <div class="max-w-[268px] w-full">
                 <div class="flex flex-col gap-[30px]">
                     <header>
@@ -197,7 +197,7 @@
                     <!-- Benefits Item -->
                     <div class="flex items-center gap-4">
                         <div class="bg-dark rounded-[26px] p-[19px]">
-                            <img src="../assets/svgs/ic-car.svg" alt="">
+                            <img src="/svgs/ic-car.svg" alt="">
                         </div>
                         <div>
                             <h5 class="text-lg text-dark font-bold mb-[2px]">
@@ -208,7 +208,7 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-dark rounded-[26px] p-[19px]">
-                            <img src="../assets/svgs/ic-card.svg" alt="">
+                            <img src="/svgs/ic-card.svg" alt="">
                         </div>
                         <div>
                             <h5 class="text-lg text-dark font-bold mb-[2px]">
@@ -219,7 +219,7 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-dark rounded-[26px] p-[19px]">
-                            <img src="../assets/svgs/ic-securityuser.svg" alt="">
+                            <img src="/svgs/ic-securityuser.svg" alt="">
                         </div>
                         <div>
                             <h5 class="text-lg text-dark font-bold mb-[2px]">
@@ -230,7 +230,7 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-dark rounded-[26px] p-[19px]">
-                            <img src="../assets/svgs/ic-convert3dcube.svg" alt="">
+                            <img src="/svgs/ic-convert3dcube.svg" alt="">
                         </div>
                         <div>
                             <h5 class="text-lg text-dark font-bold mb-[2px]">
@@ -248,7 +248,7 @@
                             <p>
                                 Explore Cars
                             </p>
-                            <img src="../assets/svgs/ic-arrow-right.svg" alt="">
+                            <img src="/svgs/ic-arrow-right.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -273,7 +273,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq1-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -289,7 +289,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq2-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -305,7 +305,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq3-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -321,7 +321,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq4-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -337,7 +337,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq5-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -353,7 +353,7 @@
                     <p class="text-base font-semibold text-dark">
                         What if I crash the car?
                     </p>
-                    <img src="../assets/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
+                    <img src="/svgs/ic-chevron-down-rounded.svg" class="transition-all" alt="">
                 </div>
                 <div class="hidden pt-4 max-w-[335px]" id="faq6-content">
                     <p class="text-base text-dark leading-[26px]">
@@ -384,12 +384,12 @@
                         <p>
                             Book Now
                         </p>
-                        <img src="../assets/svgs/ic-arrow-right.svg" alt="">
+                        <img src="/svgs/ic-arrow-right.svg" alt="">
                     </a>
                 </div>
             </div>
             <div class="absolute bottom-[-30px] right-0 lg:w-[764px] max-h-[332px] hidden lg:block">
-                <img src="../assets/images/porsche_small.webp" alt="">
+                <img src="/images/porsche_small.webp" alt="">
             </div>
         </div>
     </section>

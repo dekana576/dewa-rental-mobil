@@ -34,7 +34,7 @@
           <!-- LOGO -->
           {{-- <a href="{{ route('front.index') }}"> --}}
           <a href="">
-            <img src="/svgs/logo.svg" alt="stream" />
+            <img src="/svgs/logodewarental.png" alt="stream" style="width: 150px; height: auto;" />
           </a>
           <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
           <div class="block lg:hidden">
