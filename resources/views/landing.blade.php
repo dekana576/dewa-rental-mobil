@@ -74,113 +74,47 @@
         </div>
     </section>
 
-    <!-- Popular Cars -->
-    <section class="bg-darkGrey">
-        <div class="container relative py-[100px]">
-            <header class="mb-[30px]">
-                <h2 class="font-bold text-dark text-[26px] mb-1">
-                    Popular Cars
-                </h2>
-                <p class="text-base text-secondary">Start your big day</p>
-            </header>
+   <!-- Popular Cars -->
+  <section class="bg-darkGrey" id="popularCars">
+    <div class="container relative py-[100px]">
+      <header class="mb-[30px]">
+        <h2 class="font-bold text-dark text-[26px] mb-1">
+          Popular Cars
+        </h2>
+        <p class="text-base text-secondary">Start your big day</p>
+      </header>
 
-            <!-- Cars -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[29px]">
-                <!-- Card -->
-                <div class="card-popular">
-                    <div>
-                        <h5 class="text-lg text-dark font-bold mb-[2px]">
-                            Taycan 4S
-                        </h5>
-                        <p class="text-sm font-normal text-secondary">Electric Car</p>
-                        <a href="./details.html" class="absolute inset-0"></a>
-                    </div>
-                    <img src="/images/car-01.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
-                        alt="">
-                    <div class="flex items-center justify-between gap-1">
-                        <!-- Price -->
-                        <p class="text-sm font-normal text-secondary">
-                            <span class="text-base font-bold text-primary">$250</span>/day
-                        </p>
-                        <!-- Rating -->
-                        <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
-                            (4.8/5)
-                            <img src="/svgs/ic-star.svg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="card-popular">
-                    <div>
-                        <h5 class="text-lg text-dark font-bold mb-[2px]">
-                            911 922 RS
-                        </h5>
-                        <p class="text-sm font-normal text-secondary">Sport Car</p>
-                        <a href="./details.html" class="absolute inset-0"></a>
-                    </div>
-                    <img src="/images/car-02.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
-                        alt="">
-                    <div class="flex items-center justify-between gap-1">
-                        <!-- Price -->
-                        <p class="text-sm font-normal text-secondary">
-                            <span class="text-base font-bold text-primary">$456</span>/day
-                        </p>
-                        <!-- Rating -->
-                        <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
-                            (5/5)
-                            <img src="/svgs/ic-star.svg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="card-popular">
-                    <div>
-                        <h5 class="text-lg text-dark font-bold mb-[2px]">
-                            Macan 7S
-                        </h5>
-                        <p class="text-sm font-normal text-secondary">Family Car</p>
-                        <a href="./details.html" class="absolute inset-0"></a>
-                    </div>
-                    <img src="/images/car-03.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
-                        alt="">
-                    <div class="flex items-center justify-between gap-1">
-                        <!-- Price -->
-                        <p class="text-sm font-normal text-secondary">
-                            <span class="text-base font-bold text-primary">$190</span>/day
-                        </p>
-                        <!-- Rating -->
-                        <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
-                            (4.3/5)
-                            <img src="/svgs/ic-star.svg" alt="">
-                        </p>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="card-popular">
-                    <div>
-                        <h5 class="text-lg text-dark font-bold mb-[2px]">
-                            Cayman 992
-                        </h5>
-                        <p class="text-sm font-normal text-secondary">Race Car</p>
-                        <a href="./details.html" class="absolute inset-0"></a>
-                    </div>
-                    <img src="/images/car-04.webp" class="rounded-[18px] min-w-[216px] w-full h-[150px]"
-                        alt="">
-                    <div class="flex items-center justify-between gap-1">
-                        <!-- Price -->
-                        <p class="text-sm font-normal text-secondary">
-                            <span class="text-base font-bold text-primary">$899</span>/day
-                        </p>
-                        <!-- Rating -->
-                        <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
-                            (4.9/5)
-                            <img src="/svgs/ic-star.svg" alt="">
-                        </p>
-                    </div>
-                </div>
+      <!-- Cars -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-[29px]">
+        @foreach ($items as $item)
+          <!-- Card -->
+          <div class="card-popular">
+            <div>
+              <h5 class="text-lg text-dark font-bold mb-[2px]">
+                {{ $item->name }}
+              </h5>
+              <p class="text-sm font-normal text-secondary">
+                {{ $item->type ? $item->type->name : '-' }}
+              </p>
+              <a href="{{ route('front.detail', $item->slug) }}" class="absolute inset-0"></a>
             </div>
-        </div>
-    </section>
+            <img src="{{ $item->thumbnail }}" class="rounded-[18px] min-w-[216px] w-full h-[150px]" alt="">
+            <div class="flex items-center justify-between gap-1">
+              <!-- Price -->
+              <p class="text-sm font-normal text-secondary">
+                <span class="text-base font-bold text-primary">${{ $item->price }}</span>/day
+              </p>
+              <!-- Rating -->
+              <p class="text-dark text-xs font-semibold flex items-center gap-[2px]">
+                ({{ $item->star }}/5)
+                <img src="/svgs/ic-star.svg" alt="">
+              </p>
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </div>
+  </section>
 
     <!-- Extra Benefits -->
     <section class="container relative pt-[100px]">
