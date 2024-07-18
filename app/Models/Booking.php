@@ -8,28 +8,27 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Booking extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
-      'name',
-      'start_date',
-      'end_date',
-      'address',
-      'city',
-      'zip',
-      'status',
-      'payment_method',
-      'payment_status',
-      'payment_url',
-      'total_price',
-      'item_id',
-      'user_id',
+        'name',
+        'start_date',
+        'end_date',
+        'address',
+        'city',
+        'zip',
+        'status',
+        'payment_method',
+        'payment_status',
+        'payment_url',
+        'total_price',
+        'item_id',
+        'user_id',
     ];
 
-
-    protected $cast = [
-        'start_date' => 'datetime',
-        'end_date' => 'datetime',
+    protected $dates = [
+        'start_date',
+        'end_date',
     ];
 
     public function item()

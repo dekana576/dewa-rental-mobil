@@ -6,7 +6,6 @@ use App\Models\Item;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-
 class DetailController extends Controller
 {
     public function index($slug)
@@ -17,7 +16,7 @@ class DetailController extends Controller
             ->where('id', '!=', $item->id)
             ->get();
 
-        return view('detail', [
+        return View('detail', [
             'item' => $item,
             'similiarItems' => $similiarItems
         ]);
