@@ -71,8 +71,8 @@
             <thead>
               <tr>
                 <th style="max-width: 1%">ID</th>
-                <th>Nama</th>
                 <th>Thumbnail</th>
+                <th>Nama</th>
                 <th>Type</th>
                 <th>Brand</th>
                 <th>Harga</th>

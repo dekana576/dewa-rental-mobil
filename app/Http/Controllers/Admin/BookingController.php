@@ -9,6 +9,8 @@ use Illuminate\Support\Str;
 use Yajra\DataTables\DataTables;
 use App\Http\Requests\BookingRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Client\Request;
+
 
 class BookingController extends Controller
 {
